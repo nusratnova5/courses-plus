@@ -38,9 +38,17 @@ function Sidebar(props) {
             <button className='text-lg bg-purple-500 rounded-lg px-5 py-3 text-slate-50' onClick={()=>setBreakTime(40)}>40</button>
             <button className='text-lg bg-purple-500 rounded-lg px-5 py-3 text-slate-50' onClick={()=>setBreakTime(50)}>50</button>
         </div>
-        <div>
-            <h2>Course Time: {sumTime}</h2>
-            <h2>Break Time: {breakTime}</h2>
+        
+        <div className='mx-4 mt-8'>
+            <h1 className='text-2xl font-bold text-slate-700'>Courses Details:</h1>
+            <div>
+                <div className='bg-purple-50 p-5 rounded-2xl my-2'>
+                    <h2 className='text-lg font-semibold'>Course Time: {sumTime}</h2>
+                </div>
+                <div className='bg-purple-50 p-5 rounded-2xl my-2'>
+                    <h2 className='text-lg font-semibold'>Break Time: {breakTime}</h2>
+                </div>
+            </div>
         </div>
     </div>
   )
