@@ -4,9 +4,12 @@ import {toast, ToastContainer} from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
 function Sidebar(props) {
   const sumTime = props.time
-  const [breakTime, setBreakTime] = useState(0)
+  const [breakTime, setBreakTime] = useState(localStorage.getItem("breaktime"))
 
-  
+  const breakTimeSet = (time) =>{
+    setBreakTime(time)
+    localStorage.setItem("breaktime",time)
+  }
 
   return (
     <>
@@ -37,11 +40,11 @@ function Sidebar(props) {
         
         <h1 className='mx-4 text-2xl font-bold text-purple-900'>Add Break: </h1>
         <div className='flex justify-around bg-purple-50  rounded-2xl my-3 m-3 p-4 '>
-            <button className='text-lg bg-purple-500 rounded-lg px-5 py-3 text-slate-50' onClick={()=>setBreakTime(10)}>10</button>
-            <button className='text-lg bg-purple-500 rounded-lg px-5 py-3 text-slate-50' onClick={()=>setBreakTime(20)}>20</button>
-            <button className='text-lg bg-purple-500 rounded-lg px-5 py-3 text-slate-50' onClick={()=>setBreakTime(30)}>30</button>
-            <button className='text-lg bg-purple-500 rounded-lg px-5 py-3 text-slate-50' onClick={()=>setBreakTime(40)}>40</button>
-            <button className='text-lg bg-purple-500 rounded-lg px-5 py-3 text-slate-50' onClick={()=>setBreakTime(50)}>50</button>
+            <button className='text-lg bg-purple-500 rounded-lg px-5 py-3 text-slate-50' onClick={()=>breakTimeSet(10)}>10</button>
+            <button className='text-lg bg-purple-500 rounded-lg px-5 py-3 text-slate-50' onClick={()=>breakTimeSet(20)}>20</button>
+            <button className='text-lg bg-purple-500 rounded-lg px-5 py-3 text-slate-50' onClick={()=>breakTimeSet(30)}>30</button>
+            <button className='text-lg bg-purple-500 rounded-lg px-5 py-3 text-slate-50' onClick={()=>breakTimeSet(40)}>40</button>
+            <button className='text-lg bg-purple-500 rounded-lg px-5 py-3 text-slate-50' onClick={()=>breakTimeSet(50)}>50</button>
         </div>
 
         <div className='mx-4 mt-8'>
