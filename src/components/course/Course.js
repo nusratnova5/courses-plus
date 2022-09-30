@@ -16,7 +16,7 @@ function Course(props) {
         <h2 className='font-bold'>Name: {name}</h2>
         <p className='text-gray-500'>{newAbout}</p>
         <p>Time: {time}</p>
-        <p className='text-center'><button className='bg-amber-200	px-20 py-1 rounded-lg mt-3' onClick={()=>handleClick(time)}>ADD</button></p>
+        <p className='text-center'><button className='bg-purple-600 text-slate-100	px-20 py-1 rounded-lg mt-3' onClick={()=>handleClick(time)}>ADD</button></p>
       </div>
     </div>
   )
