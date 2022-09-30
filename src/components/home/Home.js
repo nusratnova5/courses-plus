@@ -4,6 +4,7 @@ import { faGraduationCap } from '@fortawesome/free-solid-svg-icons'
 import Course from '../course/Course'
 import Sidebar from '../sidebar/Sidebar'
 import './Home.css'
+import Blogs from '../blogs/Blogs'
 function Home() {
     const [courses, setCourses] = useState([])
     const [sumTime, setSumTime] = useState(0)
@@ -15,7 +16,8 @@ function Home() {
     },[])
     
     return (
-    <div className='flex'>
+    <div>
+      <div className='flex'>
       {/* courses */}
       <div className='bg-gray-100'>
         <div className='text-3xl ml-8 mt-7 flex'>
@@ -41,6 +43,10 @@ function Home() {
         <Sidebar time={sumTime}></Sidebar>
       </div>
 
+     </div>
+     <div className='flex w-2/3 items-center mx-auto'>
+            <Blogs></Blogs>
+     </div>
     </div>
   )
 }
