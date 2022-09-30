@@ -6,7 +6,7 @@ function Sidebar(props) {
   return (
     <div>
         {/* use info */}
-        <div className='flex p-3 m-3 font-bold bg-purple-300'>
+        <div className='flex p-3 m-3 font-bold bg-purple-200'>
             <div>
                 <img className='w-16' src={user} alt="" />
             </div>
@@ -15,8 +15,9 @@ function Sidebar(props) {
                 <p className='text-sm font-thin'>Dhaka/Bangladesh</p>
             </div>
         </div>
+
         {/* information */}
-        <div className='flex justify-between text-center m-3 font-bold text-xl bg-purple-300 text-zinc-800'>
+        <div className='flex justify-between text-center m-3 font-bold text-xl bg-purple-200 text-zinc-800'>
             <div className='p-3 mx-3'>
                 <p>75</p>
                 <p>Weight</p>
@@ -28,12 +29,13 @@ function Sidebar(props) {
                 <p>25</p><p>Age</p>
             </div>
         </div>
-        <div className='flex justify-around bg-gray-100	my-3 py-3'>
-            <button onClick={()=>setBreakTime(10)}>10</button>
-            <button onClick={()=>setBreakTime(20)}>20</button>
-            <button onClick={()=>setBreakTime(30)}>30</button>
-            <button onClick={()=>setBreakTime(40)}>40</button>
-            <button onClick={()=>setBreakTime(50)}>50</button>
+
+        <div className='flex justify-around bg-gray-100	my-6 m-3 p-4 '>
+            <button className='text-lg bg-purple-500 rounded-lg px-5 py-3 text-slate-50' onClick={()=>setBreakTime(10)}>10</button>
+            <button className='text-lg bg-purple-500 rounded-lg px-5 py-3 text-slate-50' onClick={()=>setBreakTime(20)}>20</button>
+            <button className='text-lg bg-purple-500 rounded-lg px-5 py-3 text-slate-50' onClick={()=>setBreakTime(30)}>30</button>
+            <button className='text-lg bg-purple-500 rounded-lg px-5 py-3 text-slate-50' onClick={()=>setBreakTime(40)}>40</button>
+            <button className='text-lg bg-purple-500 rounded-lg px-5 py-3 text-slate-50' onClick={()=>setBreakTime(50)}>50</button>
         </div>
         <div>
             <h2>Course Time: {sumTime}</h2>
