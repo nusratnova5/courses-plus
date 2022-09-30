@@ -17,15 +17,20 @@ function Home() {
       {/* courses */}
       <div className='course'>
         <h1>Courses</h1>
-        <button onClick={()=>setSumTime(0)}>Reset</button>
+        
         <p>Sum Time: {sumTime }</p>
-        {
-          courses.map(course => <Course
-          key={course._id}
-          course={course}
-          time = {{setSumTime,sumTime}}
-          />)
-        }
+        
+        <div className='grid grid-cols-4'>
+          <div className='container col-span-3 grid grid-cols-3 gap-5 p-5'>
+            {
+            courses.map(course => <Course
+            key={course._id}
+            course={course}
+            time = {{setSumTime,sumTime}}
+            />)
+            }
+          </div>
+        </div>
       </div>
       {/* side bar */}
       <div className='sidebar'>
