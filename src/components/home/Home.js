@@ -13,14 +13,15 @@ function Home() {
     },[])
     
     return (
-    <div className='home-container'>
+    <div className='flex h-screen'>
       {/* courses */}
-      <div className='course'>
-        <h1>Courses</h1>
+      <div className='bg-gray-100'>
+        <div className='text-3xl'>
+          <h1 className='ml-8 mt-7'>Welcome to Courses PLUS</h1>
+          
+        </div>
         
-        <p>Sum Time: {sumTime }</p>
-        
-        <div className='grid grid-cols-4'>
+        <div className='grid grid-cols-3'>
           <div className='container col-span-3 grid grid-cols-3 gap-5 p-5'>
             {
             courses.map(course => <Course
