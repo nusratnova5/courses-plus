@@ -10,13 +10,13 @@ function Course(props) {
   }
 
   return (
-    <div className='m-3'> 
+    <div className='m-2 p-1'> 
       <div className='bg-gray-50	p-5 text-left	rounded-2xl shadow-lg'>
         <img src={picture} alt=""></img>
-        <h2 className='font-bold'>Name: {name}</h2>
+        <h2 className='font-bold text-lg text-slate-900'>{name}</h2>
         <p className='text-gray-500'>{newAbout}</p>
-        <p>Time: {time}</p>
-        <p className='text-center'><button className='bg-purple-600 text-slate-100	px-20 py-1 rounded-lg mt-3' onClick={()=>handleClick(time)}>ADD</button></p>
+        <p className='text-lg'>Time: {time}</p>
+        <p className='text-center'><button className='bg-purple-600 text-slate-100	px-20 py-2 rounded-lg mt-3 w-3/4' onClick={()=>handleClick(time)}>ADD</button></p>
       </div>
     </div>
   )
