@@ -16,8 +16,8 @@ function Home() {
     },[])
     
     return (
-    <div>
-      <div className='flex'>
+    <div className=''>
+      <div className='flex sm:flex-col md:flex-row lg:flex-row '>
       {/* courses */}
       <div className='bg-gray-100'>
         <div className='text-3xl ml-8 mt-7 flex'>
@@ -26,8 +26,8 @@ function Home() {
           <h1 className=''>Welcome to Courses PLUS</h1>
         </div>
         
-        <div className='grid grid-cols-3'>
-          <div className='container col-span-3 grid grid-cols-3 gap-5 p-5'>
+        <div className='grid grid-cols-3 md:grid-cols-2'>
+          <div className='container col-span-3 grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-5 p-5'>
             {
             courses.map(course => <Course
             key={course._id}
@@ -39,7 +39,7 @@ function Home() {
         </div>
       </div>
       {/* side bar */}
-      <div className='sidebar'>
+      <div className='w-1/3'>
         <Sidebar time={sumTime}></Sidebar>
       </div>
 
