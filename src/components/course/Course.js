@@ -12,7 +12,10 @@ function Course(props) {
   return (
     <div className='m-2 p-1'> 
       <div className='bg-gray-50	p-5 text-left	rounded-2xl shadow-lg'>
-        <img src={picture} alt=""></img>
+        <div className='flex justify-center bg-gray-200 rounded-lg my-3 p-2'>
+          <img className='justify-center items-center' src={picture} alt=""></img>
+        </div>
+
         <h2 className='font-bold text-lg text-slate-900'>{name}</h2>
         <p className='text-gray-500'>{newAbout}</p>
         <p className='text-lg'>Time: {time}</p>

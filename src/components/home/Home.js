@@ -15,7 +15,7 @@ function Home() {
     },[])
     
     return (
-    <div className='flex h-screen'>
+    <div className='flex'>
       {/* courses */}
       <div className='bg-gray-100'>
         <div className='text-3xl ml-8 mt-7 flex'>
