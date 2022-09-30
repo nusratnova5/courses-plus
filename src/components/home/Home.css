@@ -1,0 +1,14 @@
+.home-container{
+    display: flex;
+    /* width: 800px; */
+    width: 100%;
+    
+}
+.course{
+    background-color: blue;
+    width: 80%;
+}
+.sidebar{
+    background-color: red;
+    width: 20%;
+}
