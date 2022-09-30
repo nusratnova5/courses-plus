@@ -35,7 +35,7 @@ function Sidebar(props) {
             </div>
         </div>
         
-        <h1 className='mx-4 text-2xl font-bold text-slate-700'>Add Break: </h1>
+        <h1 className='mx-4 text-2xl font-bold text-purple-900'>Add Break: </h1>
         <div className='flex justify-around bg-purple-50  rounded-2xl my-3 m-3 p-4 '>
             <button className='text-lg bg-purple-500 rounded-lg px-5 py-3 text-slate-50' onClick={()=>setBreakTime(10)}>10</button>
             <button className='text-lg bg-purple-500 rounded-lg px-5 py-3 text-slate-50' onClick={()=>setBreakTime(20)}>20</button>
@@ -45,7 +45,7 @@ function Sidebar(props) {
         </div>
 
         <div className='mx-4 mt-8'>
-            <h1 className='text-2xl font-bold text-slate-700'>Courses Details:</h1>
+            <h1 className='text-2xl font-bold text-purple-900'>Courses Details:</h1>
             <div>
                 <div className='bg-purple-50 p-5 rounded-2xl my-2'>
                     <h2 className='text-lg font-semibold'>Course Time: {sumTime}</h2>

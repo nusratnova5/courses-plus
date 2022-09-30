@@ -11,14 +11,14 @@
       "picture": "https://i.ibb.co/6mq9X95/course-2.png",
       "name": "CSS",
       "about": "Ullamco adipisicing deserunt sint exercitation labore do duis tempor voluptate incididunt amet et labore consectetur. Do sunt eiusmod sunt cillum aliquip consectetur ex laborum. Aliquip voluptate aliqua voluptate incididunt in reprehenderit. Lorem quis cillum pariatur adipisicing id deserunt. Labore Lorem ad ipsum veniam do dolore id voluptate duis officia. Tempor fugiat nulla est laboris sit nisi deserunt aliquip est ea ex reprehenderit eiusmod.\r\n",
-      "time":10
+      "time":8
     },
     {
       "_id": "6334b78f2737e7acbbd2fb03",
       "picture": "https://i.ibb.co/gSq1NK0/course-3.png",
       "name": "REACT",
       "about": "Pariatur sit ad ea id in ex fugiat fugiat tempor eiusmod deserunt proident laboris occaecat. Nulla adipisicing fugiat cillum et magna tempor mollit aliqua in amet excepteur amet tempor. Nisi consectetur velit magna enim labore tempor et veniam occaecat incididunt aliqua.\r\n",
-      "time":8
+      "time":6
     },
     {
       "_id": "6334b78f4b86a1164a92233c",
@@ -32,13 +32,13 @@
       "picture": "https://i.ibb.co/GkK7kfC/course-5.png",
       "name": "Tailwind CSS",
       "about": "Voluptate cupidatat mollit qui sint cillum ut irure exercitation eiusmod occaecat nulla ut ex elit. Magna officia laboris sint labore aute commodo non incididunt voluptate anim Lorem tempor. Ad ex mollit velit consequat labore ea sit culpa. Excepteur dolore occaecat consectetur ad consequat qui mollit qui consequat sunt. Consequat pariatur veniam proident dolore exercitation Lorem. Irure id enim aliquip cupidatat incididunt amet duis commodo.\r\n",
-      "time":1
+      "time":10
     },
     {
       "_id": "6334b78f4a585c4cca126d28",
       "picture": "https://i.ibb.co/j4MbDL3/course-6.png",
       "name": "Angular",
       "about": "Ad fugiat pariatur magna laborum laboris. Magna incididunt irure exercitation veniam ea ut in do incididunt exercitation mollit. Nostrud enim exercitation amet quis ullamco qui est nisi non incididunt.\r\n",
-      "time":5
+      "time":50
     }
   ]
