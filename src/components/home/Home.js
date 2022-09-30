@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGraduationCap } from '@fortawesome/free-solid-svg-icons'
 import Course from '../course/Course'
 import Sidebar from '../sidebar/Sidebar'
 import './Home.css'
@@ -16,9 +18,10 @@ function Home() {
     <div className='flex h-screen'>
       {/* courses */}
       <div className='bg-gray-100'>
-        <div className='text-3xl'>
-          <h1 className='ml-8 mt-7'>Welcome to Courses PLUS</h1>
-          
+        <div className='text-3xl ml-8 mt-7 flex'>
+          <FontAwesomeIcon className='mr-3' icon={faGraduationCap} />
+          {/* <FontAwesomeIcon icon="fa-regular fa-graduation-cap" /> */}
+          <h1 className=''>Welcome to Courses PLUS</h1>
         </div>
         
         <div className='grid grid-cols-3'>
