@@ -17,7 +17,7 @@ function Home() {
     
     return (
     <div className=''>
-      <div className='flex sm:flex-col md:flex-row lg:flex-row '>
+      <div className='container flex md:flex-row lg:flex-row '>
       {/* courses */}
       <div className='bg-gray-100'>
         <div className='text-3xl ml-8 mt-7 flex'>
@@ -39,7 +39,7 @@ function Home() {
         </div>
       </div>
       {/* side bar */}
-      <div className='w-1/3'>
+      <div className='w-full lg:w-1/3 '>
         <Sidebar time={sumTime}></Sidebar>
       </div>
 
