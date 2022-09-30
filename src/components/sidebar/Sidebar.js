@@ -1,10 +1,15 @@
 import { useState } from 'react'
 import user from '../../img/user.png'
+import {toast, ToastContainer} from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css';
 function Sidebar(props) {
   const sumTime = props.time
   const [breakTime, setBreakTime] = useState(0)
+
+  
+
   return (
-    <div>
+    <>
         {/* use info */}
         <div className='flex p-3 m-3 rounded-2xl font-bold bg-purple-100'>
             <div>
@@ -52,10 +57,11 @@ function Sidebar(props) {
         </div>
 
         <div className='text-center'>
-            <button className='mx-4 mt-8 px-10 py-6 w-4/5 text-center font-bold rounded-2xl bg-purple-600 text-slate-50'>Activity Complete</button>
+            <button onClick={() => toast("Done With Your Studies")} className='mx-4 mt-8 px-10 py-6 w-4/5 text-center font-bold rounded-2xl bg-purple-600 text-slate-50'>Activity Complete</button>
         </div>
+        <ToastContainer></ToastContainer>
         
-    </div>
+    </>
   )
 }
 
